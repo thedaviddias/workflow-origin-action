@@ -1,0 +1,31 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    labels:
+      - dependabot
+      - dependencies
+    commit-message:
+      prefix: "chore(ci)"
+      include: scope
+    assignees:
+      - "thedaviddias"
+    reviewers:
+      - "thedaviddias"
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    labels:
+      - dependabot
+      - dependencies
+    commit-message:
+      prefix: "chore(ci)"
+      include: scope
+    assignees:
+      - "thedaviddias"
+    reviewers:
+      - "thedaviddias"
