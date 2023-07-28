@@ -1,0 +1,22 @@
+name: Workflow Origin
+description: Provides detailed information about the triggering pull requests for workflow events
+
+author: David Dias <thedaviddias@gmail.com>
+
+branding:
+  icon: 'book-open'
+  color: 'gray-dark'
+
+inputs:
+  github_token:
+    description: Your GitHub token for authentication. It is used to get the repository information and generate the changelog.
+    required: true
+
+  sourceRunId:
+    description: |
+      This refers to the run that initiated the action. If you're using a workflow_run triggered run and want to act on the source workflow instead of the triggered run, set it to `$\{\{ github.event.workflow_run.id` variable \}\}`.
+    required: false
+
+runs:
+  using: node16
+  main: dist/index.js
