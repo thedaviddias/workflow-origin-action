@@ -37,7 +37,7 @@
     "@octokit/action": "^6.0.5"
   },
   "devDependencies": {
-    "@slack/types": "^2.8.0",
+    "@slack/types": "^2.11.0",
     "@thedaviddias/prettier-config": "^1.1.0",
     "@types/jest": "^29.5.3",
     "@types/node": "^20.4.5",
